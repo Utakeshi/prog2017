@@ -1,0 +1,226 @@
+
+(C:\Users\takeshi\Anaconda3) C:\Users\takeshi>python
+Python 3.6.0 |Anaconda 4.3.1 (64-bit)| (default, Dec 23 2016, 11:57:41) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import turtle
+>>> turtle = turtle.Turtle()
+>>> turtle.position()
+(0.00,0.00)
+>>> turtle.home()
+>>> turtle.clear()
+>>> turtle.forward(200)
+>>> turtle.left(120)
+>>> turtle.forward(200)
+>>> turtle.left(120)
+>>> turtle.forward(200)
+>>>
+>>>
+>>> turtle.home()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 1790, in home
+    self.setheading(0)
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 1936, in setheading
+    self._rotate(angle)
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 3276, in _rotate
+    self._update()
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 2660, in _update
+    self._update_data()
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 2646, in _update_data
+    self.screen._incrementudc()
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 1292, in _incrementudc
+    raise Terminator
+turtle.Terminator
+>>> import turtle
+>>> turtle = turtle.Turtle()
+>>> turtle.position()
+(0.00,0.00)
+>>>  turtle.home()
+  File "<stdin>", line 1
+    turtle.home()
+    ^
+IndentationError: unexpected indent
+>>>  turtle.clear()
+  File "<stdin>", line 1
+    turtle.clear()
+    ^
+IndentationError: unexpected indent
+>>>  turtle.up(40)
+  File "<stdin>", line 1
+    turtle.up(40)
+    ^
+IndentationError: unexpected indent
+>>>  turtle.pd(40)
+  File "<stdin>", line 1
+    turtle.pd(40)
+    ^
+IndentationError: unexpected indent
+>>>  turtle.left(90)
+  File "<stdin>", line 1
+    turtle.left(90)
+    ^
+IndentationError: unexpected indent
+>>>  turtle.forward(40)
+  File "<stdin>", line 1
+    turtle.forward(40)
+    ^
+IndentationError: unexpected indent
+>>>  turtle.left(270)
+  File "<stdin>", line 1
+    turtle.left(270)
+    ^
+IndentationError: unexpected indent
+>>>  turtle.forward(40)
+  File "<stdin>", line 1
+    turtle.forward(40)
+    ^
+IndentationError: unexpected indent
+>>>  turtle.left(270)
+  File "<stdin>", line 1
+    turtle.left(270)
+    ^
+IndentationError: unexpected indent
+>>>  turtle.forward(40)
+  File "<stdin>", line 1
+    turtle.forward(40)
+    ^
+IndentationError: unexpected indent
+>>>
+>>> turtle.home()
+>>> turtle.clear()
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>> turtle.left(90)
+>>> turtle.forward(100)
+>>>
+>>> turtle.home()
+>>> turtle.clear()
+>>>
+>>> for i in range(4)
+  File "<stdin>", line 1
+    for i in range(4)
+                    ^
+SyntaxError: invalid syntax
+>>>   turtle.forward(150)
+  File "<stdin>", line 1
+    turtle.forward(150)
+    ^
+IndentationError: unexpected indent
+>>>   turtle.left(90)
+  File "<stdin>", line 1
+    turtle.left(90)
+    ^
+IndentationError: unexpected indent
+>>>   turtle.home()
+  File "<stdin>", line 1
+    turtle.home()
+    ^
+IndentationError: unexpected indent
+>>> turtle.clear()
+>>>
+>>> for i in range(4)
+  File "<stdin>", line 1
+    for i in range(4)
+                    ^
+SyntaxError: invalid syntax
+>>>   turtle.forward(150)
+  File "<stdin>", line 1
+    turtle.forward(150)
+    ^
+IndentationError: unexpected indent
+>>>   turtle.left(90)
+  File "<stdin>", line 1
+    turtle.left(90)
+    ^
+IndentationError: unexpected indent
+>>>
+>>> turtle.home()
+>>> turtle.clear()
+>>>
+>>> for i in range(4):
+...   turtle.forward(150)
+...   turtle.left(90)
+...
+>>>  turtle.home()
+  File "<stdin>", line 1
+    turtle.home()
+    ^
+IndentationError: unexpected indent
+>>> turtle.clear()
+>>>
+>>> for i in range(4):
+...   turtle.forward(150)
+...   turtle.left(90)
+...
+>>> turtle.up()
+>>> turtle.forward(170)
+>>> turtle.down()
+>>>
+>>> for i in range(4):
+...   turtle.forward(150)
+...   turtle.left(90)
+...
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> turtle.home()
+>>> turtle.clear()
+>>>
+>>> for i in range(4):
+...   turtle.forward(150)
+...   turtle.left(90)
+...
+>>> turtle.up()
+>>> turtle.forward(170)
+>>> turtle.down()
+>>>
+>>> for i in range(4):
+...   turtle.forward(150)
+...   turtle.left(90)
+...
+>>> turtle.up()
+>>> turtle.left(-90)
+>>> turtle.forward(170)
+>>> turtle.down()
+>>>
+>>> for i in range(4):
+...   turtle.forward(150)
+...   turtle.left(90)
+...
+>>>
+>>>
+>>> turtle.home()
+>>> turtle.clear()
+>>>
+>>> for i in range(4):
+...   turtle.forward(150)
+...   turtle.left(90)
+...
+>>> turtle.up()
+>>> turtle.forward(170)
+>>> turtle.down()
+>>>
+>>> for i in range(4):
+...   turtle.forward(150)
+...   turtle.left(90)
+...
+>>> turtle.up()
+>>> turtle.right(90)
+>>> turtle.forward(170)
+>>> turtle.lrft(90)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Turtle' object has no attribute 'lrft'
+>>> turtle.down()
+>>>
+>>> for i in range(4):
+...   turtle.forward(150)
+...   turtle.left(90)
+...
+>>>
+(C:\Users\takeshi\Anaconda3) C:\Users\takeshi>
