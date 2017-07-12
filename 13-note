@@ -1,0 +1,158 @@
+
+(C:\Users\takeshi\Anaconda3) C:\Users\takeshi>python
+Python 3.6.0 |Anaconda 4.3.1 (64-bit)| (default, Dec 23 2016, 11:57:41) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import turtle
+>>> t = turtle.Turtle()
+>>>
+>>> t.home()
+>>> t.clear()
+>>>
+>>> for x in range(4):
+...   t.forward(100)
+...   t.left(90)
+...
+>>>
+>>> t.home()
+>>> t.clear()
+>>>
+>>> for i in range(4):
+...   t.up()
+...   t.forward(20)
+...   t.down()
+...   for x in range(4):
+...     t.forward(100)
+...     t.left(90)
+...   t.left(-90)
+...
+>>>
+>>> t.home()
+>>> t.clear()
+>>>
+>>> for i in range(6):
+...   t.forward(100)
+...   t.left(60)
+...
+>>>
+>>> def func():
+...   i = 3
+...   return i
+...
+>>> func()
+3
+>>> func()
+3
+>>> def func(v):
+...   i = v+3
+...   return i
+...
+>>> func(5)
+8
+>>> def total(n):
+...   s=0
+...   for i in range(1,n+1):
+...     s+=i
+...   return s
+...
+...  total(5)
+  File "<stdin>", line 7
+    total(5)
+           ^
+IndentationError: unindent does not match any outer indentation level
+>>> def total(n):
+...   s=0
+...   for i in range(1,n+1):
+...     s+=i
+...   return s
+...
+... total(5)
+  File "<stdin>", line 7
+    total(5)
+        ^
+SyntaxError: invalid syntax
+>>> def total(n):
+...   s = 0
+...   for i in range(1,n + 1):
+...     s += i
+...   return s
+...
+... total(5)
+  File "<stdin>", line 7
+    total(5)
+        ^
+SyntaxError: invalid syntax
+>>> def center_circle():
+...   t.penup()
+...   t.forward(200)
+...   t.left(90)
+...   t.pendown()
+...   t.circle(200)
+...   t.left(90)
+...   t.penup()
+...   t.forward(200)
+...   t.pendown()
+...
+>>> center_circle()
+>>>
+>>> def circle(x,y,z):
+...   t.up()
+...   t.home()
+...   t.forward(x)
+...   t.left(90)
+...   t.forward(y)
+...   t.forward(r)
+...   t.left(90)
+...   t.down()
+...   t.circle(r)
+...
+>>> t.home()
+>>> t.clear()
+>>>
+>>> circle(0,0,100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 7, in circle
+NameError: name 'r' is not defined
+>>> circle(100,200,50)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 7, in circle
+NameError: name 'r' is not defined
+>>>
+>>> def circle(x,y,r):
+...   t.up()
+...   t.home()
+...   t.forward(x)
+...   t.left(90)
+...   t.forward(y)
+...   t.forward(r)
+...   t.left(90)
+...   t.down()
+...   t.circle(r)
+...
+>>> t.home()
+>>> t.clear()
+>>>
+>>> circle(0,0,100)
+>>> circle(100,200,50)
+>>>
+>>> def circle(x,y,r):
+...    t.up()
+...    t.home()
+...    t.forward(x)
+...    t.left(90)
+...    t.forward(y)
+...    t.forward(r)
+...    t.left(90)
+...    t.down()
+...    t.circle(r)
+...
+>>> t.home()
+>>> t.clear()
+>>>
+>>> circle(100,-100,50)
+>>> circle(100,100,50)
+>>> circle(-100,-100,50)
+>>> circle(-100,100,50)
+>>>
+>>>
