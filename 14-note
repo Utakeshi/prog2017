@@ -1,0 +1,335 @@
+
+(C:\Users\takeshi\Anaconda3) C:\Users\takeshi>python
+Python 3.6.0 |Anaconda 4.3.1 (64-bit)| (default, Dec 23 2016, 11:57:41) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import turtle
+>>> t = turtle.Turtle()
+>>>
+>>> t.home()
+>>> t.clear()
+>>>
+>>> t.forward(100)
+>>> t.left(90)
+>>> t.forward(100)
+>>>
+>>> der rect(x,y,a):
+  File "<stdin>", line 1
+    der rect(x,y,a):
+           ^
+SyntaxError: invalid syntax
+>>> import turtle
+>>> t = turtle.Turtle()
+>>>
+>>> t.home()
+>>> t.clear()
+>>>
+>>> t.forward(100)
+>>> t.left(90)
+>>> t.forward(100)
+>>>
+>>> der rect(x,y,a):
+  File "<stdin>", line 1
+    der rect(x,y,a):
+           ^
+SyntaxError: invalid syntax
+>>>   t.up()
+  File "<stdin>", line 1
+    t.up()
+    ^
+IndentationError: unexpected indent
+>>>   t.home()
+  File "<stdin>", line 1
+    t.home()
+    ^
+IndentationError: unexpected indent
+>>>   t.forward(x)
+  File "<stdin>", line 1
+    t.forward(x)
+    ^
+IndentationError: unexpected indent
+>>>   t.left(90)
+  File "<stdin>", line 1
+    t.left(90)
+    ^
+IndentationError: unexpected indent
+>>>   t.forward(y)
+  File "<stdin>", line 1
+    t.forward(y)
+    ^
+IndentationError: unexpected indent
+>>>   t.down()
+  File "<stdin>", line 1
+    t.down()
+    ^
+IndentationError: unexpected indent
+>>>   for i in range(4):
+  File "<stdin>", line 1
+    for i in range(4):
+    ^
+IndentationError: unexpected indent
+>>>     t.forward(a)
+  File "<stdin>", line 1
+    t.forward(a)
+    ^
+IndentationError: unexpected indent
+>>>     t.left(90)
+  File "<stdin>", line 1
+    t.left(90)
+    ^
+IndentationError: unexpected indent
+>>>
+>>>
+>>> t.clear()
+>>> rect(10,20,100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'rect' is not defined
+>>>
+>>> import turtle
+>>> t = turtle.Turtle()
+>>>
+>>> t.home()
+>>> t.clear()
+>>>
+>>> t.forward(100)
+>>> t.left(90)
+>>> t.forward(100)
+>>>
+>>> der rect(x,y,a):
+  File "<stdin>", line 1
+    der rect(x,y,a):
+           ^
+SyntaxError: invalid syntax
+>>>   t.up()
+  File "<stdin>", line 1
+    t.up()
+    ^
+IndentationError: unexpected indent
+>>>   t.home()
+  File "<stdin>", line 1
+    t.home()
+    ^
+IndentationError: unexpected indent
+>>>   t.forward(x)
+  File "<stdin>", line 1
+    t.forward(x)
+    ^
+IndentationError: unexpected indent
+>>>   t.left(90)
+  File "<stdin>", line 1
+    t.left(90)
+    ^
+IndentationError: unexpected indent
+>>>   t.forward(y)
+  File "<stdin>", line 1
+    t.forward(y)
+    ^
+IndentationError: unexpected indent
+>>>   t.down()
+  File "<stdin>", line 1
+    t.down()
+    ^
+IndentationError: unexpected indent
+>>>   for i in range(4):
+  File "<stdin>", line 1
+    for i in range(4):
+    ^
+IndentationError: unexpected indent
+>>>     t.forward(a)
+  File "<stdin>", line 1
+    t.forward(a)
+    ^
+IndentationError: unexpected indent
+>>>     t.left(90)
+  File "<stdin>", line 1
+    t.left(90)
+    ^
+IndentationError: unexpected indent
+>>>
+>>> def rect(x,y,a):
+...   t.up()
+...   t.home()
+...   t.forward(x)
+...   t.left(90)
+...   t.forward(y)
+...   t.down()
+...   for i in range(4):
+...     t.forward(a)
+...     t.left(90)
+...
+>>> t.clear()
+>>> rect(10,20,100)
+>>>
+>>> import turtle
+>>> t = turtle.Turtle()
+>>>
+>>> t.home()
+>>> t.clear()
+>>>
+>>> t.forward(100)
+>>> t.left(90)
+>>> t.forward(100)
+>>>
+>>> def rect(x,y,a):
+...   t.up()
+...   t.home()
+...   t.forward(x)
+...   t.left(90)
+...   t.forward(y)
+...   t.down()
+...   for i in range(4):
+...     t.forward(a)
+...     t.left(90)
+... #空行
+...
+>>> t.clear()
+>>> rect(10,10,100)
+>>> rect(10,-110,100)
+>>> rect(-110,10,100)
+>>> rect(10,10,-110)
+>>>
+>>> import turtle
+>>> t = turtle.Turtle()
+>>>
+>>> t.home()
+>>> t.clear()
+>>>
+>>> t.forward(100)
+>>> t.left(90)
+>>> t.forward(100)
+>>>
+>>> def rect(x,y,a):
+...   t.up()
+...   t.home()
+...   t.forward(x)
+...   t.left(90)
+...   t.forward(y)
+...   t.down()
+...   for i in range(4):
+...     t.forward(a)
+...     t.left(90)
+... #空行
+...
+>>> t.clear()
+>>> rect(10,10,100)
+>>> rect(10,-110,100)
+>>> rect(-110,10,100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 3, in rect
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 1789, in home
+    self.goto(0, 0)
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 1776, in goto
+    self._goto(Vec2D(x, y))
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 3179, in _goto
+    self._update()
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 2660, in _update
+    self._update_data()
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 2646, in _update_data
+    self.screen._incrementudc()
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 1292, in _incrementudc
+    raise Terminator
+turtle.Terminator
+>>> rect(-110,-110,100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 3, in rect
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 1789, in home
+    self.goto(0, 0)
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 1776, in goto
+    self._goto(Vec2D(x, y))
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 3158, in _goto
+    screen._pointlist(self.currentLineItem),
+  File "C:\Users\takeshi\Anaconda3\lib\turtle.py", line 755, in _pointlist
+    cl = self.cv.coords(item)
+  File "<string>", line 1, in coords
+  File "C:\Users\takeshi\Anaconda3\lib\tkinter\__init__.py", line 2463, in coords
+    self.tk.call((self._w, 'coords') + args))]
+_tkinter.TclError: invalid command name ".!canvas"
+>>> import random
+>>> random.randint(1,6)
+6
+>>>
+>>>
+>>>
+>>> import random
+>>> random.randint(1,6)
+5
+>>> import random
+>>> random.randint(1,6)
+3
+>>> random.randint(1,6)
+2
+>>> random.randint(1,6)
+6
+>>> random.randint(1,6)
+4
+>>> class Dice:
+...   face_num = 6
+...   def shoot(self):
+...     return random.randint(1, self.face_num)
+... #
+...
+>>> import random
+>>> aDice = Dice()
+>>> aDice.shoot()
+3
+>>>
+>>> aDice.shoot() #オブジェクトを使う
+6
+>>>
+>>> aDice.shoot() #オブジェクトを使う
+6
+>>> aDice.shoot() #オブジェクトを使う
+2
+>>> aDice.face_num=10
+>>> aDice.shoot()
+7
+>>> aDice.face_num=100
+>>> aDice.shoot()
+44
+>>> aDice.face_num=1000
+>>> aDice.shoot()
+386
+>>>
+>>> exit()
+
+(C:\Users\takeshi\Anaconda3) C:\Users\takeshi>cd /cit
+
+(C:\Users\takeshi\Anaconda3) C:\cit>dir
+ ドライブ C のボリューム ラベルは Windows です
+ ボリューム シリアル番号は D47A-2906 です
+
+ C:\cit のディレクトリ
+
+2017/06/28  11:20    <DIR>          .
+2017/06/28  11:20    <DIR>          ..
+2017/07/12  11:55    <DIR>          prog2017
+2017/06/28  11:20               238 recod.csv
+2017/06/28  11:20               392 recod.txt
+2017/06/28  11:19               238 test.txt
+               3 個のファイル                 868 バイト
+               3 個のディレクトリ  390,778,548,224 バイトの空き領域
+
+(C:\Users\takeshi\Anaconda3) C:\cit>dir .
+ ドライブ C のボリューム ラベルは Windows です
+ ボリューム シリアル番号は D47A-2906 です
+
+ C:\cit のディレクトリ
+
+2017/06/28  11:20    <DIR>          .
+2017/06/28  11:20    <DIR>          ..
+2017/07/12  11:55    <DIR>          prog2017
+2017/06/28  11:20               238 recod.csv
+2017/06/28  11:20               392 recod.txt
+2017/06/28  11:19               238 test.txt
+               3 個のファイル                 868 バイト
+               3 個のディレクトリ  390,776,393,728 バイトの空き領域
+
+(C:\Users\takeshi\Anaconda3) C:\cit>dir > files.txt
+
+(C:\Users\takeshi\Anaconda3) C:\cit>dir >> file.txt
+
+(C:\Users\takeshi\Anaconda3) C:\cit>dir >> files.txt
+
+(C:\Users\takeshi\Anaconda3) C:\cit>
